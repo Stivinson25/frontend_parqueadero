@@ -1,3 +1,23 @@
-<p>
-  parqueadero works!
-</p>
+<h1>Lista de vehiculos</h1>
+<div style="padding:15px"></div>
+<table class="table" >
+  <thead class="thead table-success">
+    <tr>
+      <th scope="col">Placa</th>
+      <th scope="col">Tipo de Vehiculo</th>
+      <th scope="col">Fecha de ingreso</th>
+      <th scope="col">Cilindraje</th>
+      <th scope="col">Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of vehiculos">
+      <td>{{item.placa}}</td>
+      <td>{{item.tipoVehiculo}}</td>
+      <td>{{item.fechaIngreso}}</td>
+      <td>{{item.cilindraje}}</td>
+      <td>{{item.estado}}</td>
+    </tr>
+
+  </tbody>
+</table>
